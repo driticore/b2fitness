@@ -248,7 +248,6 @@ header
 }
 
 .header-area .main-nav {
-  min-height: 80px;
   background: transparent;
 }
 
@@ -452,9 +451,9 @@ header
   }
 }
 
-@media (max-width: 767px) {
-  .header-area .main-nav .logo {
-    color: #1e1e1e;
+@media (max-width: 810px) {
+  .logo {
+    color: #000000;
   }
   .header-area.header-sticky .nav li a:hover,
   .header-area.header-sticky .nav li a.active {
@@ -468,9 +467,7 @@ header
     box-shadow: none;
     text-align: center;
   }
-  .header-area .container {
-    padding: 0px;
-  }
+
   .header-area .logo {
     margin-left: 30px;
   }
@@ -562,9 +559,13 @@ header
   .header-area .main-nav .nav li.submenu:hover ul, .header-area .main-nav .nav li.submenu:focus ul {
     height: 0px;
   }
+
+  .book-button {
+    display: none !important;
+  }
 }
 
-@media (min-width: 767px) {
+@media (min-width: 810px) {
   .header-area .main-nav .nav {
     display: flex !important;
   }
